@@ -1,0 +1,19 @@
+#!/bin/bash
+echo "Enter the user input"
+read a
+if [[ $a == 'dhanraj' ]]  || [[ $a == 'DHANRAJ']]
+then
+echo "True"
+uptime
+elif [[ $a == 'kiran' ]] || [[ $a == 'KIRAN']]
+then
+echo "false"
+uname -a
+elif [[ $a == 'teju']] || [[ $a == 'TEJU']]
+then
+echo "Almost true"
+ps -eaf
+else 
+echo "user input is completely wrong"
+free
+fi
