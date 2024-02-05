@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "Enter the input1"
+read a
+echo "Enter the input2"
+read b
+coa=$ (echo $a |wc -c)
+cob=$ (echo $b |wc -c)
+if [[ $coa -gt $cob ]]
+then
+ou="$a$b"
+echo "Count of characters of inputs $a is greater then count of character of input $b and combined output  of $a and $b is $ou"
+elif [[ $cob -gt $coa ]]
+then
+echo "Enter another user input"
+read c
+ou="$a$b$c"
+echo -e "Count of characters of inputs $a is greater then count of character of input $b and combined output  of $a and $b and $c is $ou\n count of character in $a is $coa\n count of character in $b is $cob"
+fi
